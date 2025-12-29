@@ -26,7 +26,23 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
-<img width="1000" height="606" alt="image" src="https://github.com/user-attachments/assets/3bec71f0-bd4d-4b4b-8acd-cef14be914bc" />
+```
+#include <stdio.h>
+
+int main() {
+    int intLiteral = 10;
+    float floatLiteral = 3.14;
+    char charLiteral = 'A';
+    char stringLiteral[] = "Hello C";
+
+    printf("Integer literal: %d, Size: %lu bytes\n", intLiteral, sizeof(intLiteral));
+    printf("Float literal: %f, Size: %lu bytes\n", floatLiteral, sizeof(floatLiteral));
+    printf("Character literal: %c, Size: %lu bytes\n", charLiteral, sizeof(charLiteral));
+    printf("String literal: %s, Size: %lu bytes\n", stringLiteral, sizeof(stringLiteral));
+
+    return 0;
+}
+```
 
 # Output:
 <img width="1021" height="444" alt="image" src="https://github.com/user-attachments/assets/5eba8617-c429-4942-98e2-7432dda3399b" />
@@ -61,8 +77,18 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
-<img width="1010" height="464" alt="image" src="https://github.com/user-attachments/assets/e10062dc-4630-474d-b1f4-36ebc07a355e" />
+```
+#include <stdio.h>
+#define PI 3.14159
+int main() {
+    const int DAYS = 7;
 
+    printf("Value of macro constant PI: %f\n", PI);
+    printf("Value of constant variable DAYS: %d\n", DAYS);
+
+    return 0;
+}
+```
 # Output:
 <img width="1029" height="426" alt="image" src="https://github.com/user-attachments/assets/837fcb32-5279-4d43-abfe-48efcf2bcdfa" />
 
@@ -89,7 +115,18 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
-<img width="985" height="451" alt="image" src="https://github.com/user-attachments/assets/af9d09d4-e936-4a5e-8e0d-7223b77ed396" />
+```
+#include <stdio.h>
+#define PI 3.14159
+int main() {
+    const int DAYS = 7;
+
+    printf("Value of macro constant PI: %f\n", PI);
+    printf("Value of constant variable DAYS: %d\n", DAYS);
+
+    return 0;
+}
+```
 
 # Output:
 <img width="1020" height="372" alt="image" src="https://github.com/user-attachments/assets/42bd7fa0-933d-4884-b757-9224aae9a2c1" />
@@ -133,7 +170,19 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
-<img width="975" height="746" alt="image" src="https://github.com/user-attachments/assets/83c821d5-94f5-4dc7-b3c1-64b5720ed7f1" />
+```
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c",&ch);
+    (ch>='0' && ch<='9')?printf("Digit\n"):
+    ((ch>='A' && ch<='Z')||(ch>='a' && ch<='z'))?
+    ((ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')?printf("Vowel\n"):printf("Consonant\n"))
+    :printf("Special Symbol\n");
+    return 0;
+}
+```
 
 # Output:
 <img width="1013" height="704" alt="image" src="https://github.com/user-attachments/assets/2eeb46f4-a71e-49ea-b32a-8a252fc8cddc" />
@@ -182,7 +231,18 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
-<img width="979" height="659" alt="image" src="https://github.com/user-attachments/assets/976ba3d1-8625-4bf8-b1af-f03f48a9e64d" />
+```
+#include <stdio.h>
+#define PI 3.14159
+int main() {
+    const int DAYS = 7;
+
+    printf("Value of macro constant PI: %f\n", PI);
+    printf("Value of constant variable DAYS: %d\n", DAYS);
+
+    return 0;
+}
+```
 
 # Output:
 <img width="1056" height="281" alt="image" src="https://github.com/user-attachments/assets/582abd2e-275b-40b4-b123-3473a5f46ec8" />
